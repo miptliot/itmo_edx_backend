@@ -90,7 +90,7 @@ class ItmoBackendProvider(ProctoringBackendProvider):
 
         # get the external ID that Proctor webassistant has defined
         # for this attempt
-        ssi_record_locator = json.loads(response)['sessionID']
+        ssi_record_locator = json.loads(response)['sessionId']
         log.info(ssi_record_locator)
 
         return ssi_record_locator
